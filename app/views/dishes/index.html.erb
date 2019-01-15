@@ -8,7 +8,7 @@
             <li>
               <div class="collapsible-header"><i class="material-icons">filter_drama</i><%= course.name %><a href="<%=new_dish_path(course: course.id) %>" class="add"><i class="material-icons right-align  blue-text tooltipped" data-position="top" data-tooltip="Add Dish">library_add</i></a></div>
               <div class="collapsible-body">
-                <%=image_tag "course_#{index+1}" , class: "responsive-img" , size: "400"%>
+                <%=image_tag "course_#{index+1}.jpeg" , class: "responsive-img" , size: "400"%>
                 <div class="row">
                   <% course.dishes.each do |dish| %>
                     <div class="col s12 m4">
