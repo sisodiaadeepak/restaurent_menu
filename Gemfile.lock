@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/rubocop-hq/rubocop.git
-  revision: 7abc4badefca71f5fd9cb3f9b0e8e0f78801a51e
+  revision: ad65d4fe0f68a8324ac76b0c38aefcdbadc7753b
   specs:
     rubocop (0.62.0)
       jaro_winkler (~> 1.5.1)
@@ -258,4 +258,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   2.0.1
+   1.17.3
