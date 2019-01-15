@@ -5,20 +5,23 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.6
 
-* System dependencies
+* System dependencies: linux
 
-* Configuration
+* Configuration: none
 
-* Database creation
+* Database creation:
+
+    `rails db:create`
+
 
 * Database initialization
 
-* How to run the test suite
+    `rails db:migrate`
 
-* Services (job queues, cache servers, search engines, etc.)
+    `rails db:seed`
 
-* Deployment instructions
+* Heroku Url
 
-* ...
+https://restaurant-menu-test.herokuapp.com/
