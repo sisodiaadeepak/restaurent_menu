@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12">
+        <h1>Editing Dish</h1>
+        <%= render 'form', dish: @dish %>
+        <%= link_to('Delete', dish_path(@dish.id), method: :delete, class: "red-text") %>
+        <%= link_to 'Back', dishes_path %>
+      </div>
+    </div>
+  </div>
+</div>

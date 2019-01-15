@@ -1,0 +1,35 @@
+<%= form_with(model: dish, local: true) do |form| %>
+  <% if dish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
+
+      <ul>
+      <% dish.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="input-field col s12 m6 l4">
+      <%= form.text_field :name, class: "validate" %>
+      <%= form.label :name %>
+      <span class="helper-text" data-error=""></span>
+    </div>
+    <div class="input-field col s12 m6 l4">
+      <%= form.number_field :price, class: "validate" %>
+      <%= form.label :price %>
+      <span class="helper-text" data-error=""></span>
+    </div>
+    <div class="input-field col s12 m6 l4">
+      <%= form.text_field :description, class: "validate" %>
+      <%= form.label :description %>
+      <span class="helper-text" data-error=""></span>
+    </div>
+    <%=form.hidden_field :course_id, value: dish.course.id %>
+  </div>
+  <div class="input-field ">
+    <button type="submit" name="commit" value="Submit" class="waves-effect waves-light btn " data-disable-with="Submit">Submit</button>
+  </div>
+<% end %>

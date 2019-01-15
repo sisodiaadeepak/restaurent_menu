@@ -2,14 +2,24 @@
 <html>
   <head>
     <title>RestaurantMenu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="grey lighten-5">
+  <header>
+    <%= render "partials/header/default" %>
+  </header>
+  <main>
+    <p class="notice hide"><%= notice %></p>
+    <p class="alert hide"><%= alert %></p>
     <%= yield %>
+  </main>
+  <%= render "partials/footer/default" %>
   </body>
 </html>

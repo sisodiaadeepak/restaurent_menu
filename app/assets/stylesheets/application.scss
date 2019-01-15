@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require material_icons
+ *= require_self
+ */
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+$font-stack: Roboto,
+ -apple-system,
+ BlinkMacSystemFont,
+"Segoe UI",
+Oxygen-Sans,
+Ubuntu,
+Cantarell,
+"Helvetica Neue",
+sans-serif !default;
+// ==========================================================================
+// Color
+// ==========================================================================
+$primary-color: #21272E !default;
+$sidenav-bg-color: $primary-color;
+$sidenav-font-color: #fff;
+$dropdown-bg-color: $primary-color;
+$footer-bg-color: #455a64;
+$footer-copyright-bg-color: #354558;
+// ==========================================================================
+// Materialize Import
+// ==========================================================================
+@import 'materialize';
+
+.mt-0{margin-top: 0;}
+.mt-1{margin-top: 5px;}
+.mr-2{margin-right: 10px;}
+.mb-0{margin-bottom: 0;}
+
+.collapsible-header a.add{
+  margin-left: auto;
+}
+.collapsible-header-text{
+  margin-right: 1rem;
+  flex: 0 0 auto;
+}
